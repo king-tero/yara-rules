@@ -2,11 +2,11 @@
     This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as long as you use it under this license.
 */
 
-rule Trojan_Coin_Miner
+rule Trojan_Coin_Miner_a
 {
 
   meta:
-    description = "Trojan Coin Miner - silently uses the infected device's physical resources to mine digital currency."
+    description = "Trojan Coin Miner variant A - silently uses the infected device's physical resources to mine digital currency."
     source = "VTDIFF https://support.virustotal.com/hc/en-us/articles/360010904818-VTDIFF-Automatic-YARA-rules" 
     author = "king-tero"
 
