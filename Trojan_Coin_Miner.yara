@@ -56,3 +56,17 @@ rule Trojan_Coin_Miner_d
   condition:
     all of them
 }
+
+rule Trojan_Coin_Miner_e
+{
+  meta:
+    description = "Trojan Coin Miner variant E - silently uses the infected device's physical resources to mine digital currency."
+    source = "VTDIFF https://support.virustotal.com/hc/en-us/articles/360010904818-VTDIFF-Automatic-YARA-rules"
+    author = "king-tero"
+    
+  strings:
+    $0 = {F8531EECF3F29ACCB392BB2C72720C3280266CF2C24C3A6CA08459546EFE724580F3FE05C79E5509EFEBA2C138B37DF345F64F45D271AB49F2724519A79413FED475EE14C9065440D7955308D5AC143C55}
+  condition:
+    all of them
+}
+
